@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "822343959644",
+    "project_id": "alabassi-dd19d",
+    "storage_bucket": "alabassi-dd19d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:822343959644:android:a7c2f048a794740912d299",
+        "android_client_info": {
+          "package_name": "com.albassi.suermarket"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgUOWlCtZbCFbpx-DjSpBd3iPZfYzcWjo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

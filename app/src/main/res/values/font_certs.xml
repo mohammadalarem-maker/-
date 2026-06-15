@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="com_google_android_gms_fonts_certs">
+        <item>@array/com_google_android_gms_fonts_certs_dev</item>
+        <item>@array/com_google_android_gms_fonts_certs_prod</item>
+    </array>
+    <string-array name="com_google_android_gms_fonts_certs_dev">
+        <item>
+            +9xBzR/m0x9f5qX+n9F00Z1S+YFk4k89b9hNIfM2mF0C98W0S/7sLwDkX1Yf6a0A3t6Xl7B9e4Wk
+            0K9lO1+I6Oq5Y/mQ2P0E/3Yd6iL+8M6h3wH4+4O8M4H0U9K4f8n9iO4L+1D/mI5f/gX3g/lYv+R/9t5/P0x9
+            r7Ww4e7O8N4N0/1E/y4+n/6f7+0I1M8P8K0l7z7+wK2x2N0l9a8/19z70x0O0u0m2d1o4l3a5Q8k+j+v2G
+            5l8/0a8S68i1c6i9T2K2P4b0R4U0r4=
+        </item>
+    </string-array>
+    <string-array name="com_google_android_gms_fonts_certs_prod">
+        <item>
+            +n5B+L0F2U8z6s7R+C0W0Z7/p5C1k3l5S9A1b3+6h++A5d1c9Y3r5X/wG4D+N5F8E6T2H4A0g4Z3+w
+            4O2c1U1g3v5C7R4E4p7G0z+0o/i6u8f0/m/J/34E/W/o/v6P2y1U6+1O1L9d8X9I8I+B0j7K7R8u45+E1f3J+
+            5F1W4w0s6+9i4N7r9w3W3p+K8S4c1y0F5d7l5k6Q2=
+        </item>
+    </string-array>
+</resources>

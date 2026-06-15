@@ -12,15 +12,16 @@ jobs:
         cache: gradle
     - name: Build Android APK
       run: |
+        # إنشاء ملف keystore وهمي إذا كان مفقوداً في المجلد الرئيسي
+        if [ ! -f "debug.keystore" ]; then
+          echo "🔑 Generating temporary debug.keystore..."
+          keytool -genkey -v -keystore debug.keystore -storepass android -alias androiddebugkey -keypass android -keyalg RSA -keysize 2048 -validity 10000 -dname "CN=Android Debug,O=Android,C=US"
+        fi
+
         G=$(find . -name gradlew | head -n 1)
         if [ -z "$G" ]; then
           echo "⚠️ gradlew not found in repository. Falling back to global gradle..."
           gradle assembleDebug
-        else
-          echo "✅ gradlew found at $G. Building with wrapper..."
-          chmod +x "$G"
-          cd $(dirname "$G")
-          ./gradlew assembleDebug
         fi
     - uses: actions/upload-artifact@v4
       with:

@@ -10,12 +10,18 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         cache: gradle
-    - name: Build
+    - name: Build Android APK
       run: |
         G=$(find . -name gradlew | head -n 1)
-        chmod +x "$G"
-        cd $(dirname "$G")
-        ./gradlew assembleDebug
+        if [ -z "$G" ]; then
+          echo "⚠️ gradlew not found in repository. Falling back to global gradle..."
+          gradle assembleDebug
+        else
+          echo "✅ gradlew found at $G. Building with wrapper..."
+          chmod +x "$G"
+          cd $(dirname "$G")
+          ./gradlew assembleDebug
+        fi
     - uses: actions/upload-artifact@v4
       with:
         name: AI-Studio-APK
